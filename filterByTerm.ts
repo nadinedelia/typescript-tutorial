@@ -1,4 +1,6 @@
 interface Link {
+  description?: string;
+  id?: number;
   url: string;
 }
 
