@@ -9,4 +9,9 @@ function filterByTerm(input, searchTerm) {
         return arrayElement.url.match(regex);
     });
 }
-filterByTerm([{ url: "string1" }, { url: "string2" }, { url: "string3" }], "java");
+var obj1 = { url: "string1" };
+var obj2 = { url: "string2" };
+var obj3 = { url: "string3" };
+var arrOfLinks = [obj1, obj2, obj3];
+var term = "java";
+filterByTerm(arrOfLinks, term);

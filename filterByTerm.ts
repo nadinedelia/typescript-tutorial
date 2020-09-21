@@ -13,7 +13,12 @@ function filterByTerm(input: Array<Link>, searchTerm: string) {
   });
 }
 
-filterByTerm(
-  [{ url: "string1" }, { url: "string2" }, { url: "string3" }],
-  "java"
-);
+const obj1: Link = { url: "string1" };
+const obj2: Link = { url: "string2" };
+const obj3: Link = { url: "string3" };
+
+const arrOfLinks: Array<Link> = [obj1, obj2, obj3];
+
+const term: string = "java";
+
+filterByTerm(arrOfLinks, term);
